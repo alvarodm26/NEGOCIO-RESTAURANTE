@@ -31,7 +31,7 @@ const textVariants = {
     filter: "blur(0px)",
     transition: {
       duration: 0.9,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -48,7 +48,7 @@ const descriptionVariants = {
     filter: "blur(0px)",
     transition: {
       duration: 0.8,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -126,7 +126,7 @@ export default function Gallery() {
               transition={{
                 delay: 0.45,
                 duration: 0.6,
-                ease: [0.22, 1, 0.36, 1],
+                ease: [0.22, 1, 0.36, 1] as const,
               }}
               className="h-px bg-[#C86B45]/50"
             />
@@ -165,7 +165,7 @@ export default function Gallery() {
               transition={{
                 delay: 0.45,
                 duration: 0.6,
-                ease: [0.22, 1, 0.36, 1],
+                ease: [0.22, 1, 0.36, 1] as const,
               }}
               className="h-px bg-[#C86B45]/50"
             />
@@ -211,7 +211,7 @@ export default function Gallery() {
                   filter: "blur(0px)",
                   transition: {
                     duration: 0.8,
-                    ease: [0.22, 1, 0.36, 1],
+                    ease: [0.22, 1, 0.36, 1] as const,
                   },
                 },
               }}
@@ -239,7 +239,7 @@ export default function Gallery() {
                 }}
                 transition={{
                   duration: 0.8,
-                  ease: [0.22, 1, 0.36, 1],
+                  ease: [0.22, 1, 0.36, 1] as const,
                 }}
                 className="h-full w-full object-cover"
               >
@@ -360,7 +360,7 @@ export default function Gallery() {
           transition={{
             delay: 0.4,
             duration: 0.7,
-            ease: [0.22, 1, 0.36, 1],
+            ease: [0.22, 1, 0.36, 1] as const,
           }}
           className="mt-8 flex items-center justify-center gap-3"
         >

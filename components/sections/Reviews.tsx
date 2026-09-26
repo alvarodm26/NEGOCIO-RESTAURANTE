@@ -370,7 +370,7 @@ export default function Reviews() {
           }}
           transition={{
             duration: 0.75,
-            ease: [0.22, 1, 0.36, 1],
+            ease: [0.22, 1, 0.36, 1] as const,
           }}
           className="mx-auto max-w-2xl text-center"
         >
@@ -390,7 +390,7 @@ export default function Reviews() {
             }}
             transition={{
               duration: 0.55,
-              ease: [0.22, 1, 0.36, 1],
+              ease: [0.22, 1, 0.36, 1] as const,
             }}
             className="mx-auto mb-4 flex w-fit items-center gap-2 rounded-full border border-[#C86B45]/25 bg-white/60 px-3.5 py-1.5 shadow-[0_5px_25px_rgba(23,23,20,0.04)] backdrop-blur-sm"
           >
@@ -435,7 +435,7 @@ export default function Reviews() {
           }}
           transition={{
             duration: 0.75,
-            ease: [0.22, 1, 0.36, 1],
+            ease: [0.22, 1, 0.36, 1] as const,
           }}
           className="mt-9 overflow-hidden"
           ref={viewportRef}
@@ -446,7 +446,7 @@ export default function Reviews() {
             }}
             transition={{
               duration: 1.35,
-              ease: [0.22, 1, 0.36, 1],
+              ease: [0.22, 1, 0.36, 1] as const,
             }}
             className="flex"
             style={{
@@ -461,7 +461,7 @@ export default function Reviews() {
                 }}
                 transition={{
                   duration: 0.35,
-                  ease: [0.22, 1, 0.36, 1],
+                  ease: [0.22, 1, 0.36, 1] as const,
                 }}
                 className="group relative shrink-0"
                 style={{
@@ -593,7 +593,7 @@ export default function Reviews() {
                       }}
                       transition={{
                         duration: 0.8,
-                        ease: [0.22, 1, 0.36, 1],
+                        ease: [0.22, 1, 0.36, 1] as const,
                       }}
                       className="absolute inset-y-0 left-0 w-1/3 origin-left bg-[#C86B45]/60"
                     />

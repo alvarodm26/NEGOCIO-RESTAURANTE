@@ -24,7 +24,7 @@ const fadeUp = {
     filter: "blur(0px)",
     transition: {
       duration: 0.8,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -232,7 +232,7 @@ Personas: ${formData.people}`;
             viewport={{ once: true, amount: 0.2 }}
             transition={{
               duration: 0.9,
-              ease: [0.22, 1, 0.36, 1],
+              ease: [0.22, 1, 0.36, 1] as const,
             }}
             className="relative"
           >
@@ -249,7 +249,7 @@ Personas: ${formData.people}`;
                 transition={{
                   duration: 1,
                   delay: 0.3,
-                  ease: [0.22, 1, 0.36, 1],
+                  ease: [0.22, 1, 0.36, 1] as const,
                 }}
                 className="absolute left-0 right-0 top-0 h-[2px] origin-left bg-[#C86B45]"
               />

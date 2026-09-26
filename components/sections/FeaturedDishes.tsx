@@ -28,7 +28,7 @@ const textVariants = {
     filter: "blur(0px)",
     transition: {
       duration: 0.9,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -47,7 +47,7 @@ const buttonVariants = {
     filter: "blur(0px)",
     transition: {
       duration: 0.8,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -62,7 +62,7 @@ const itemVariants = {
     y: 0,
     transition: {
       duration: 0.7,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -155,7 +155,7 @@ export default function FeaturedDishes() {
                 }}
                 transition={{
                   duration: 0.35,
-                  ease: [0.22, 1, 0.36, 1],
+                  ease: [0.22, 1, 0.36, 1] as const,
                 }}
                 className="relative z-10 flex h-8 w-8 items-center justify-center rounded-full bg-[#C86B45] text-white"
               >

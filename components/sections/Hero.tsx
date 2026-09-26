@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 import { ArrowDown, ArrowUpRight, MapPin, Sparkles } from "lucide-react";
 import { restaurant } from "@/data/restaurant";
 
-const ease = [0.22, 1, 0.36, 1];
+const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function Hero() {
   return (

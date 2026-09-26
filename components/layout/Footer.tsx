@@ -22,7 +22,7 @@ const itemVariants = {
     filter: "blur(0px)",
     transition: {
       duration: 0.7,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -242,7 +242,7 @@ export default function Footer() {
           }}
           transition={{
             duration: 1.1,
-            ease: [0.22, 1, 0.36, 1],
+            ease: [0.22, 1, 0.36, 1] as const,
           }}
           className="relative h-[2px] w-full origin-center overflow-hidden bg-white/20"
         >

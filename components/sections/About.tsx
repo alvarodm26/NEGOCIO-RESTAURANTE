@@ -38,7 +38,7 @@ const textVariants = {
     filter: "blur(0px)",
     transition: {
       duration: 0.9,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -57,7 +57,7 @@ const featureVariants = {
     filter: "blur(0px)",
     transition: {
       duration: 0.7,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -102,7 +102,7 @@ export default function About() {
           }}
           transition={{
             duration: 1,
-            ease: [0.22, 1, 0.36, 1],
+            ease: [0.22, 1, 0.36, 1] as const,
           }}
           className="relative mx-auto w-full max-w-xl lg:mx-0"
         >
@@ -193,7 +193,7 @@ export default function About() {
                       }}
                       transition={{
                         duration: 0.35,
-                        ease: [0.22, 1, 0.36, 1],
+                        ease: [0.22, 1, 0.36, 1] as const,
                       }}
                       className="block h-1 rounded-full bg-white"
                     />
@@ -224,7 +224,7 @@ export default function About() {
             transition={{
               delay: 0.5,
               duration: 0.8,
-              ease: [0.22, 1, 0.36, 1],
+              ease: [0.22, 1, 0.36, 1] as const,
             }}
             whileHover={{
               y: -5,

@@ -26,7 +26,7 @@ const itemVariants = {
     filter: "blur(0px)",
     transition: {
       duration: 0.65,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -59,7 +59,7 @@ export default function Location() {
           }}
           transition={{
             duration: 0.75,
-            ease: [0.22, 1, 0.36, 1],
+            ease: [0.22, 1, 0.36, 1] as const,
           }}
           className="mx-auto flex max-w-2xl flex-col items-center text-center"
         >
@@ -238,7 +238,7 @@ export default function Location() {
             }}
             transition={{
               duration: 0.9,
-              ease: [0.22, 1, 0.36, 1],
+              ease: [0.22, 1, 0.36, 1] as const,
             }}
             className="p-3 sm:p-4"
           >

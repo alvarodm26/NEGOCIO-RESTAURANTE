@@ -13,7 +13,7 @@ import Link from "next/link";
 import { dishes } from "@/data/dishes";
 import { categories } from "@/data/categories";
 
-const ease = [0.22, 1, 0.36, 1];
+const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function CartaPage() {
   return (

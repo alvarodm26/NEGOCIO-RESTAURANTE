@@ -26,7 +26,7 @@ const textVariants = {
     filter: "blur(0px)",
     transition: {
       duration: 0.75,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -43,7 +43,7 @@ const buttonVariants = {
     scale: 1,
     transition: {
       duration: 0.65,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   },
 };
@@ -71,7 +71,7 @@ export default function CTA() {
         }}
         transition={{
           duration: 1,
-          ease: [0.22, 1, 0.36, 1],
+          ease: [0.22, 1, 0.36, 1] as const,
         }}
         className="pointer-events-none absolute -right-20 top-1/2 hidden h-64 w-64 -translate-y-1/2 rounded-full border border-white/15 lg:block"
       />
