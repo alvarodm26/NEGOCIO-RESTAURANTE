@@ -1,3 +1,4 @@
+
 "use client";
 
 import { motion } from "motion/react";
@@ -21,7 +22,7 @@ export default function CartaPage() {
       {/* HERO CARTA */}
       {/* ========================================================= */}
 
-      <section className="relative flex min-h-[72vh] items-center justify-center overflow-hidden bg-[#171714] text-white">
+      <section className="relative flex min-h-[56vh] items-center justify-center overflow-hidden bg-[#171714] text-white">
         {/* VIDEO */}
         <motion.div
           initial={{
@@ -69,17 +70,17 @@ export default function CartaPage() {
             duration: 0.7,
             ease,
           }}
-          className="absolute left-6 top-7 z-20 sm:left-8 lg:left-10"
+          className="absolute left-5 top-5 z-20 sm:left-7 sm:top-6 lg:left-9"
         >
           <Link
             href="/"
-            className="group inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/20 px-5 py-2.5 text-sm text-white/85 backdrop-blur-md transition-all duration-300 hover:border-white/45 hover:bg-black/30 hover:text-white"
+            className="group inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/20 px-4 py-2 text-xs text-white/85 backdrop-blur-md transition-all duration-300 hover:border-white/45 hover:bg-black/30 hover:text-white"
           >
             <motion.span
               whileHover={{ x: -4 }}
               transition={{ duration: 0.2 }}
             >
-              <ArrowLeft size={16} />
+              <ArrowLeft size={15} />
             </motion.span>
 
             Volver
@@ -92,7 +93,7 @@ export default function CartaPage() {
           <motion.div
             initial={{
               opacity: 0,
-              y: 25,
+              y: 20,
             }}
             animate={{
               opacity: 1,
@@ -103,11 +104,11 @@ export default function CartaPage() {
               duration: 0.7,
               ease,
             }}
-            className="mb-6 flex items-center justify-center gap-4"
+            className="mb-4 flex items-center justify-center gap-3"
           >
             <motion.span
               initial={{ width: 0 }}
-              animate={{ width: 40 }}
+              animate={{ width: 32 }}
               transition={{
                 delay: 0.5,
                 duration: 0.6,
@@ -116,13 +117,13 @@ export default function CartaPage() {
               className="h-px bg-[#C86B45]"
             />
 
-            <span className="text-xs uppercase tracking-[0.3em] text-white/80">
+            <span className="text-[10px] uppercase tracking-[0.3em] text-white/80">
               Casa Misti
             </span>
 
             <motion.span
               initial={{ width: 0 }}
-              animate={{ width: 40 }}
+              animate={{ width: 32 }}
               transition={{
                 delay: 0.5,
                 duration: 0.6,
@@ -136,7 +137,7 @@ export default function CartaPage() {
           <motion.h1
             initial={{
               opacity: 0,
-              y: 55,
+              y: 45,
             }}
             animate={{
               opacity: 1,
@@ -147,7 +148,7 @@ export default function CartaPage() {
               duration: 1,
               ease,
             }}
-            className="font-serif text-6xl leading-[0.9] tracking-[-0.05em] drop-shadow-[0_4px_25px_rgba(0,0,0,0.35)] sm:text-7xl md:text-8xl lg:text-[8rem]"
+            className="font-serif text-5xl leading-[0.92] tracking-[-0.05em] drop-shadow-[0_4px_25px_rgba(0,0,0,0.35)] sm:text-6xl md:text-7xl lg:text-[5.5rem]"
           >
             Nuestra carta
           </motion.h1>
@@ -156,7 +157,7 @@ export default function CartaPage() {
           <motion.p
             initial={{
               opacity: 0,
-              y: 30,
+              y: 25,
             }}
             animate={{
               opacity: 1,
@@ -167,7 +168,7 @@ export default function CartaPage() {
               duration: 0.8,
               ease,
             }}
-            className="mx-auto mt-7 max-w-2xl text-base leading-7 text-white/80 drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)] sm:text-lg"
+            className="mx-auto mt-5 max-w-xl text-sm leading-6 text-white/80 drop-shadow-[0_2px_12px_rgba(0,0,0,0.4)] sm:text-base"
           >
             Descubre nuestra selección de platos, preparados con dedicación y
             pensados para disfrutar cada momento.
@@ -188,7 +189,7 @@ export default function CartaPage() {
               duration: 0.7,
               ease,
             }}
-            className="mx-auto mt-9 flex items-center justify-center gap-3"
+            className="mx-auto mt-6 flex items-center justify-center gap-2"
           >
             <span className="h-1 w-1 rounded-full bg-[#C86B45]" />
             <span className="h-1 w-1 rounded-full bg-white/60" />
@@ -210,9 +211,9 @@ export default function CartaPage() {
             delay: 1.2,
             duration: 0.8,
           }}
-          className="absolute bottom-7 left-1/2 z-10 hidden -translate-x-1/2 items-center gap-3 text-[10px] uppercase tracking-[0.25em] text-white/65 sm:flex"
+          className="absolute bottom-5 left-1/2 z-10 hidden -translate-x-1/2 items-center gap-2 text-[9px] uppercase tracking-[0.25em] text-white/65 sm:flex"
         >
-          <Utensils size={13} />
+          <Utensils size={12} />
 
           Explora nuestra selección
 
@@ -242,7 +243,7 @@ export default function CartaPage() {
         <motion.div
           initial={{
             opacity: 0,
-            y: 25,
+            y: 20,
           }}
           whileInView={{
             opacity: 1,
@@ -256,7 +257,7 @@ export default function CartaPage() {
             duration: 0.7,
             ease,
           }}
-          className="mx-auto flex max-w-7xl flex-col justify-between gap-6 px-6 py-12 sm:px-8 md:flex-row md:items-center lg:px-10"
+          className="mx-auto flex max-w-7xl flex-col justify-between gap-5 px-6 py-7 sm:px-8 md:flex-row md:items-center lg:px-10"
         >
           <motion.div
             initial={{
@@ -274,7 +275,7 @@ export default function CartaPage() {
               duration: 0.7,
               ease,
             }}
-            className="flex items-center gap-4"
+            className="flex items-center gap-3"
           >
             <motion.div
               initial={{
@@ -295,9 +296,9 @@ export default function CartaPage() {
                 duration: 0.6,
                 ease,
               }}
-              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#C86B45]/10 text-[#C86B45]"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#C86B45]/10 text-[#C86B45]"
             >
-              <ChefHat size={20} strokeWidth={1.5} />
+              <ChefHat size={17} strokeWidth={1.5} />
             </motion.div>
 
             <div>
@@ -317,7 +318,7 @@ export default function CartaPage() {
                   delay: 0.2,
                   duration: 0.5,
                 }}
-                className="text-sm font-medium"
+                className="text-xs font-medium sm:text-sm"
               >
                 Preparaciones hechas con dedicación
               </motion.p>
@@ -338,7 +339,7 @@ export default function CartaPage() {
                   delay: 0.3,
                   duration: 0.5,
                 }}
-                className="mt-1 text-xs text-black/45"
+                className="mt-0.5 text-[10px] text-black/45 sm:text-xs"
               >
                 Ingredientes seleccionados · Preparación artesanal
               </motion.p>
@@ -362,7 +363,7 @@ export default function CartaPage() {
               duration: 0.7,
               ease,
             }}
-            className="max-w-md text-sm leading-6 text-black/50 md:text-right"
+            className="max-w-md text-xs leading-5 text-black/50 md:text-right sm:text-sm"
           >
             Nuestra carta cambia con las estaciones y con los productos que
             encontramos en su mejor momento.
@@ -374,8 +375,8 @@ export default function CartaPage() {
       {/* CARTA */}
       {/* ========================================================= */}
 
-      <section className="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-10 lg:py-28">
-        <div className="space-y-32">
+      <section className="mx-auto max-w-7xl px-6 py-12 sm:px-8 lg:px-10 lg:py-16">
+        <div className="space-y-20">
           {categories
             .filter((category) => category !== "Todos")
             .map((category, categoryIndex) => {
@@ -402,12 +403,10 @@ export default function CartaPage() {
                     duration: 0.6,
                   }}
                 >
-                  {/* ================================================= */}
                   {/* CABECERA CATEGORIA */}
-                  {/* ================================================= */}
 
-                  <div className="mb-12 flex items-end justify-between border-b border-black/10 pb-6">
-                    <div className="flex items-end gap-5">
+                  <div className="mb-7 flex items-end justify-between border-b border-black/10 pb-4">
+                    <div className="flex items-end gap-4">
                       {/* NUMERO */}
                       <motion.span
                         initial={{
@@ -425,7 +424,7 @@ export default function CartaPage() {
                           duration: 0.6,
                           ease,
                         }}
-                        className="mb-2 text-xs tracking-[0.2em] text-[#C86B45]"
+                        className="mb-1.5 text-[10px] tracking-[0.2em] text-[#C86B45]"
                       >
                         {String(categoryIndex + 1).padStart(2, "0")}
                       </motion.span>
@@ -434,7 +433,7 @@ export default function CartaPage() {
                       <motion.h2
                         initial={{
                           opacity: 0,
-                          y: 30,
+                          y: 25,
                         }}
                         whileInView={{
                           opacity: 1,
@@ -448,7 +447,7 @@ export default function CartaPage() {
                           duration: 0.8,
                           ease,
                         }}
-                        className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl md:text-6xl"
+                        className="font-serif text-3xl tracking-[-0.04em] sm:text-4xl md:text-5xl"
                       >
                         {category}
                       </motion.h2>
@@ -471,25 +470,23 @@ export default function CartaPage() {
                         delay: 0.15,
                         duration: 0.6,
                       }}
-                      className="hidden text-xs uppercase tracking-[0.16em] text-black/30 sm:block"
+                      className="hidden text-[10px] uppercase tracking-[0.16em] text-black/30 sm:block"
                     >
                       {categoryDishes.length}{" "}
                       {categoryDishes.length === 1 ? "opción" : "opciones"}
                     </motion.span>
                   </div>
 
-                  {/* ================================================= */}
                   {/* GRID DE PLATOS */}
-                  {/* ================================================= */}
 
-                  <div className="grid gap-8 md:grid-cols-2">
+                  <div className="grid gap-5 md:grid-cols-2">
                     {categoryDishes.map((dish, index) => (
                       <motion.article
                         key={dish.id}
                         initial={{
                           opacity: 0,
-                          y: 60,
-                          scale: 0.96,
+                          y: 40,
+                          scale: 0.98,
                         }}
                         whileInView={{
                           opacity: 1,
@@ -501,29 +498,25 @@ export default function CartaPage() {
                           amount: 0.12,
                         }}
                         transition={{
-                          duration: 0.8,
-                          delay: index * 0.12,
+                          duration: 0.7,
+                          delay: index * 0.1,
                           ease,
                         }}
                         className="group relative"
                       >
-                        {/* ================================================= */}
                         {/* CARD */}
-                        {/* ================================================= */}
 
                         <motion.div
                           whileHover={{
-                            y: -9,
+                            y: -6,
                           }}
                           transition={{
                             duration: 0.45,
                             ease,
                           }}
-                          className="relative min-h-[235px] overflow-hidden rounded-[1.8rem] border border-[#C86B45]/10 bg-white shadow-[0_8px_30px_rgba(23,23,20,0.035)] transition-all duration-500 hover:border-[#C86B45]/30 hover:shadow-[0_25px_65px_rgba(23,23,20,0.13)]"
+                          className="relative min-h-[205px] overflow-hidden rounded-[1.5rem] border border-[#C86B45]/10 bg-white shadow-[0_8px_30px_rgba(23,23,20,0.035)] transition-all duration-500 hover:border-[#C86B45]/30 hover:shadow-[0_20px_55px_rgba(23,23,20,0.11)]"
                         >
-                          {/* ================================================= */}
                           {/* FONDO DECORATIVO */}
-                          {/* ================================================= */}
 
                           <motion.div
                             initial={{
@@ -538,11 +531,11 @@ export default function CartaPage() {
                               once: true,
                             }}
                             transition={{
-                              delay: index * 0.12 + 0.15,
+                              delay: index * 0.1 + 0.15,
                               duration: 0.9,
                               ease,
                             }}
-                            className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-[#C86B45]/[0.045] blur-2xl transition-all duration-700 group-hover:scale-150 group-hover:bg-[#C86B45]/[0.08]"
+                            className="absolute -right-20 -top-20 h-52 w-52 rounded-full bg-[#C86B45]/[0.045] blur-2xl transition-all duration-700 group-hover:scale-150 group-hover:bg-[#C86B45]/[0.08]"
                           />
 
                           <motion.div
@@ -554,17 +547,13 @@ export default function CartaPage() {
                               repeat: Infinity,
                               ease: "linear",
                             }}
-                            className="absolute -bottom-24 -left-24 h-48 w-48 rounded-full border border-[#C86B45]/[0.06]"
+                            className="absolute -bottom-24 -left-24 h-44 w-44 rounded-full border border-[#C86B45]/[0.06]"
                           />
 
-                          {/* ================================================= */}
                           {/* CONTENIDO */}
-                          {/* ================================================= */}
 
-                          <div className="relative z-10 flex h-full gap-6 p-5 sm:p-6">
-                            {/* ================================================= */}
+                          <div className="relative z-10 flex h-full gap-5 p-4 sm:p-5">
                             {/* IMAGEN */}
-                            {/* ================================================= */}
 
                             <motion.div
                               initial={{
@@ -581,13 +570,14 @@ export default function CartaPage() {
                                 once: true,
                               }}
                               transition={{
-                                delay: index * 0.12 + 0.15,
+                                delay: index * 0.1 + 0.15,
                                 duration: 0.75,
                                 ease,
                               }}
-                              className="relative h-36 w-36 shrink-0 self-center sm:h-40 sm:w-40"
+                              className="relative h-32 w-32 shrink-0 self-center sm:h-36 sm:w-36"
                             >
                               {/* HALO */}
+
                               <motion.div
                                 animate={{
                                   scale: [1, 1.06, 1],
@@ -598,11 +588,12 @@ export default function CartaPage() {
                                   repeat: Infinity,
                                   ease: "easeInOut",
                                 }}
-                                className="absolute -inset-3 rounded-[1.7rem] bg-[#C86B45]/10 blur-xl"
+                                className="absolute -inset-3 rounded-[1.5rem] bg-[#C86B45]/10 blur-xl"
                               />
 
                               {/* IMAGEN */}
-                              <div className="relative h-full w-full overflow-hidden rounded-[1.45rem] bg-[#EEE6D8] shadow-[0_10px_30px_rgba(23,23,20,0.12)]">
+
+                              <div className="relative h-full w-full overflow-hidden rounded-[1.3rem] bg-[#EEE6D8] shadow-[0_8px_25px_rgba(23,23,20,0.11)]">
                                 <motion.img
                                   src={dish.image}
                                   alt={dish.name}
@@ -617,6 +608,7 @@ export default function CartaPage() {
                                 />
 
                                 {/* OVERLAY */}
+
                                 <motion.div
                                   className="absolute inset-0 bg-gradient-to-tr from-[#171714]/20 via-transparent to-[#C86B45]/10"
                                   initial={{
@@ -631,6 +623,7 @@ export default function CartaPage() {
                                 />
 
                                 {/* BRILLO */}
+
                                 <motion.div
                                   initial={{
                                     x: "-120%",
@@ -646,7 +639,8 @@ export default function CartaPage() {
                                 />
                               </div>
 
-                              {/* NUMERO DEL PLATO */}
+                              {/* NUMERO */}
+
                               <motion.span
                                 initial={{
                                   opacity: 0,
@@ -660,22 +654,21 @@ export default function CartaPage() {
                                   once: true,
                                 }}
                                 transition={{
-                                  delay: index * 0.12 + 0.45,
+                                  delay: index * 0.1 + 0.45,
                                   duration: 0.5,
                                   ease,
                                 }}
-                                className="absolute -right-2 -top-2 flex h-8 w-8 items-center justify-center rounded-full border border-white bg-[#171714] text-[10px] font-semibold tracking-wider text-white shadow-lg"
+                                className="absolute -right-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full border border-white bg-[#171714] text-[9px] font-semibold tracking-wider text-white shadow-lg"
                               >
                                 {String(index + 1).padStart(2, "0")}
                               </motion.span>
                             </motion.div>
 
-                            {/* ================================================= */}
                             {/* INFORMACION */}
-                            {/* ================================================= */}
 
-                            <div className="flex min-w-0 flex-1 flex-col justify-center py-2">
+                            <div className="flex min-w-0 flex-1 flex-col justify-center py-1">
                               {/* TOP */}
+
                               <div className="flex items-start justify-between gap-3">
                                 <motion.h3
                                   initial={{
@@ -690,16 +683,17 @@ export default function CartaPage() {
                                     once: true,
                                   }}
                                   transition={{
-                                    delay: index * 0.12 + 0.25,
+                                    delay: index * 0.1 + 0.25,
                                     duration: 0.6,
                                     ease,
                                   }}
-                                  className="font-serif text-[1.55rem] leading-[1.05] tracking-[-0.03em] transition-colors duration-300 group-hover:text-[#C86B45]"
+                                  className="font-serif text-[1.3rem] leading-[1.05] tracking-[-0.03em] transition-colors duration-300 group-hover:text-[#C86B45]"
                                 >
                                   {dish.name}
                                 </motion.h3>
 
                                 {/* PRECIO */}
+
                                 <motion.span
                                   initial={{
                                     opacity: 0,
@@ -715,11 +709,11 @@ export default function CartaPage() {
                                     once: true,
                                   }}
                                   transition={{
-                                    delay: index * 0.12 + 0.35,
+                                    delay: index * 0.1 + 0.35,
                                     duration: 0.55,
                                     ease,
                                   }}
-                                  className="relative shrink-0 overflow-hidden rounded-full border border-[#C86B45]/20 bg-[#C86B45]/10 px-3.5 py-1.5 text-xs font-bold text-[#B95D3A]"
+                                  className="relative shrink-0 overflow-hidden rounded-full border border-[#C86B45]/20 bg-[#C86B45]/10 px-3 py-1 text-[11px] font-bold text-[#B95D3A]"
                                 >
                                   <motion.span
                                     animate={{
@@ -740,26 +734,28 @@ export default function CartaPage() {
                                 </motion.span>
                               </div>
 
-                              {/* LINEA DECORATIVA */}
+                              {/* LINEA */}
+
                               <motion.div
                                 initial={{
                                   width: 0,
                                 }}
                                 whileInView={{
-                                  width: "32px",
+                                  width: "28px",
                                 }}
                                 viewport={{
                                   once: true,
                                 }}
                                 transition={{
-                                  delay: index * 0.12 + 0.4,
+                                  delay: index * 0.1 + 0.4,
                                   duration: 0.5,
                                   ease,
                                 }}
-                                className="mt-4 h-[2px] rounded-full bg-[#C86B45]"
+                                className="mt-3 h-[2px] rounded-full bg-[#C86B45]"
                               />
 
                               {/* DESCRIPCION */}
+
                               <motion.p
                                 initial={{
                                   opacity: 0,
@@ -773,16 +769,16 @@ export default function CartaPage() {
                                   once: true,
                                 }}
                                 transition={{
-                                  delay: index * 0.12 + 0.45,
+                                  delay: index * 0.1 + 0.45,
                                   duration: 0.6,
-                                  ease,
                                 }}
-                                className="mt-4 text-sm leading-6 text-black/50"
+                                className="mt-3 text-xs leading-5 text-black/50 sm:text-sm"
                               >
                                 {dish.description}
                               </motion.p>
 
                               {/* DESTACADO */}
+
                               {dish.featured && (
                                 <motion.div
                                   initial={{
@@ -797,11 +793,11 @@ export default function CartaPage() {
                                     once: true,
                                   }}
                                   transition={{
-                                    delay: index * 0.12 + 0.55,
+                                    delay: index * 0.1 + 0.55,
                                     duration: 0.6,
                                     ease,
                                   }}
-                                  className="mt-4 inline-flex w-fit items-center gap-2 rounded-full border border-[#C86B45]/15 bg-[#C86B45]/[0.06] px-3 py-1.5 text-[9px] font-bold uppercase tracking-[0.15em] text-[#C86B45]"
+                                  className="mt-3 inline-flex w-fit items-center gap-2 rounded-full border border-[#C86B45]/15 bg-[#C86B45]/[0.06] px-2.5 py-1 text-[8px] font-bold uppercase tracking-[0.15em] text-[#C86B45]"
                                 >
                                   <motion.span
                                     animate={{
@@ -820,7 +816,8 @@ export default function CartaPage() {
                                 </motion.div>
                               )}
 
-                              {/* DECORACION INFERIOR */}
+                              {/* DECORACION */}
+
                               <motion.div
                                 initial={{
                                   opacity: 0,
@@ -832,27 +829,25 @@ export default function CartaPage() {
                                   once: true,
                                 }}
                                 transition={{
-                                  delay: index * 0.12 + 0.6,
+                                  delay: index * 0.1 + 0.6,
                                   duration: 0.5,
                                 }}
-                                className="mt-auto flex items-center gap-1.5 pt-5"
+                                className="mt-3 flex items-center gap-1.5"
                               >
                                 <Sparkles
-                                  size={11}
+                                  size={10}
                                   strokeWidth={1.5}
                                   className="text-[#C86B45]/50"
                                 />
 
-                                <span className="text-[9px] uppercase tracking-[0.18em] text-black/25">
+                                <span className="text-[8px] uppercase tracking-[0.18em] text-black/25">
                                   Casa Misti
                                 </span>
                               </motion.div>
                             </div>
                           </div>
 
-                          {/* ================================================= */}
-                          {/* BORDE INFERIOR ANIMADO */}
-                          {/* ================================================= */}
+                          {/* BORDE INFERIOR */}
 
                           <motion.div
                             initial={{
@@ -867,12 +862,10 @@ export default function CartaPage() {
                               duration: 0.5,
                               ease,
                             }}
-                            className="absolute bottom-0 left-6 right-6 h-[2px] origin-left rounded-full bg-gradient-to-r from-[#C86B45] via-[#D98A67] to-transparent"
+                            className="absolute bottom-0 left-5 right-5 h-[2px] origin-left rounded-full bg-gradient-to-r from-[#C86B45] via-[#D98A67] to-transparent"
                           />
 
-                          {/* ================================================= */}
                           {/* FLECHA */}
-                          {/* ================================================= */}
 
                           <motion.div
                             initial={{
@@ -888,9 +881,9 @@ export default function CartaPage() {
                             transition={{
                               duration: 0.3,
                             }}
-                            className="absolute bottom-5 right-5 hidden h-8 w-8 items-center justify-center rounded-full bg-[#171714] text-white sm:flex"
+                            className="absolute bottom-4 right-4 hidden h-7 w-7 items-center justify-center rounded-full bg-[#171714] text-white sm:flex"
                           >
-                            <ArrowUpRight size={14} />
+                            <ArrowUpRight size={13} />
                           </motion.div>
                         </motion.div>
                       </motion.article>
@@ -921,7 +914,7 @@ export default function CartaPage() {
           className="absolute right-[10%] top-[20%] hidden lg:block"
         >
           <Utensils
-            size={90}
+            size={75}
             strokeWidth={0.5}
             className="text-white/[0.04]"
           />
@@ -941,17 +934,17 @@ export default function CartaPage() {
           className="absolute bottom-[15%] left-[8%] hidden lg:block"
         >
           <Utensils
-            size={55}
+            size={50}
             strokeWidth={0.5}
             className="text-white/[0.025]"
           />
         </motion.div>
 
-        <div className="relative mx-auto max-w-4xl px-6 py-24 text-center sm:px-8 lg:py-32">
+        <div className="relative mx-auto max-w-4xl px-6 py-16 text-center sm:px-8 lg:py-20">
           <motion.div
             initial={{
               opacity: 0,
-              y: 40,
+              y: 30,
             }}
             whileInView={{
               opacity: 1,
@@ -967,6 +960,7 @@ export default function CartaPage() {
             }}
           >
             {/* EYEBROW */}
+
             <motion.p
               initial={{
                 opacity: 0,
@@ -982,16 +976,17 @@ export default function CartaPage() {
               transition={{
                 duration: 0.6,
               }}
-              className="text-xs uppercase tracking-[0.28em] text-[#C86B45]"
+              className="text-[10px] uppercase tracking-[0.28em] text-[#C86B45]"
             >
               Una experiencia para compartir
             </motion.p>
 
             {/* TITULO */}
+
             <motion.h2
               initial={{
                 opacity: 0,
-                y: 30,
+                y: 25,
               }}
               whileInView={{
                 opacity: 1,
@@ -1005,12 +1000,13 @@ export default function CartaPage() {
                 duration: 0.8,
                 ease,
               }}
-              className="mx-auto mt-6 max-w-3xl font-serif text-4xl leading-[1] tracking-[-0.04em] sm:text-5xl md:text-6xl"
+              className="mx-auto mt-4 max-w-2xl font-serif text-3xl leading-[1] tracking-[-0.04em] sm:text-4xl md:text-5xl"
             >
               Haz de tu próxima visita un momento especial.
             </motion.h2>
 
             {/* TEXTO */}
+
             <motion.p
               initial={{
                 opacity: 0,
@@ -1027,13 +1023,14 @@ export default function CartaPage() {
                 delay: 0.25,
                 duration: 0.7,
               }}
-              className="mx-auto mt-6 max-w-xl text-sm leading-6 text-white/50 sm:text-base"
+              className="mx-auto mt-4 max-w-xl text-xs leading-5 text-white/50 sm:text-sm"
             >
               Reserva tu mesa y disfruta de una experiencia pensada para
               compartir, celebrar y disfrutar.
             </motion.p>
 
             {/* BOTON */}
+
             <motion.div
               initial={{
                 opacity: 0,
@@ -1053,11 +1050,11 @@ export default function CartaPage() {
                 duration: 0.7,
                 ease,
               }}
-              className="mt-9"
+              className="mt-7"
             >
               <Link
                 href="/#reservas"
-                className="group inline-flex items-center gap-2 rounded-full bg-[#C86B45] px-7 py-4 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#b95d3a] hover:shadow-[0_15px_35px_rgba(200,107,69,0.2)]"
+                className="group inline-flex items-center gap-2 rounded-full bg-[#C86B45] px-6 py-3 text-xs font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#b95d3a] hover:shadow-[0_15px_35px_rgba(200,107,69,0.2)]"
               >
                 Reservar una mesa
 
@@ -1070,7 +1067,7 @@ export default function CartaPage() {
                     duration: 0.2,
                   }}
                 >
-                  <ArrowUpRight size={17} />
+                  <ArrowUpRight size={15} />
                 </motion.span>
               </Link>
             </motion.div>

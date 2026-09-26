@@ -1,3 +1,4 @@
+
 "use client";
 
 import { motion } from "motion/react";
@@ -118,7 +119,7 @@ export default function FeaturedDishes() {
             className="mt-9"
           >
             <motion.a
-              href="#menu"
+              href="/carta"
               whileHover={{
                 y: -4,
               }}
